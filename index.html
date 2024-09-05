@@ -84,8 +84,9 @@
         <!-- Start of active pokemon template -->
         <div id="active-pokemon">
           <div class="col-6 border border-danger text-white m-2">Active Pokemon
-            <h3>Pokemon Name</h3>
-            <img src="https:placehold.it/470x200" alt="">
+
+            <h3>${this.name}</h3>
+            <img src="`${this.image}`" alt="">
             <div class="card bg-dark border border-success">
               <div class="d-flex">
                 <span>Element | </span>
@@ -96,14 +97,15 @@
                   <p>Attack - #hp</p>
                   <p>Defense - #hp</p>
                   <p>Speed - #hp</p>
-                  <p>Weight - #hp</p>
-                  <p>Height - #hp</p>
+                  <p>${this.weight} - #hp</p>
+                  <p>${this.height} - #hp</p>
                   <div>
-                    <button class="bg-success text-white">Catch Em!</button>
+                    <button class="bg-success text-white rounded-pill">Catch Em!</button>
                   </div>
                 </div>
               </div>
             </div>
+            
           </div>
         </div>
         <!-- End of active pokemon template -->
